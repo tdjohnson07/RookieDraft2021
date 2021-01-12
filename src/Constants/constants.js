@@ -75,7 +75,7 @@ export const Valor = {
     needs: "WR, QB",
     picks: [103, 108, 303, 307, 403],
     playersSelectd: [],
-    imagePath: "/images/logos/valor.jpg"
+    imagePath: "/images/logos/Valor.jpg"
 }
 
 export const Landsharks = {

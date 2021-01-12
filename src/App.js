@@ -30,7 +30,8 @@ function App() {
     <div className="App">
       <h1>MGFL Dyansty League 2021 Rookie Draft</h1>
       <button onClick={() => setStartDraft(!startDraft)}>Start Draft</button>
-      <h2>On the Clock: {firstRound[draftIndex].name}</h2>
+      <h2>On the Clock: {firstRound[draftIndex]?.name}</h2>
+      <img className="teamLogo"  src={process.env.PUBLIC_URL + firstRound[draftIndex]?.imagePath} alt="image"/>
       <button onClick={incrementDraftIndex}>Make Pick</button>
       <Clock expiryTimestamp={time} isStarted={startDraft} />
       <ScrollText className="pickScroll">{roundText}</ScrollText>

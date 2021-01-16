@@ -21,3 +21,8 @@ export const removePlayerDrafted = (player) => ({
     type: "REMOVE_PLAYER_DRAFTED",
     payload: player
 })
+
+export const updateDraftOrder = (team, index) => ({
+    type: "UPDATE_DRAFT_ORDER",
+    payload: {team: team, index: index}
+})

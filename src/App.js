@@ -7,6 +7,7 @@ import PlayerSelection from './Components/playerSelection';
 import InfoScroll from './Components/infoScroll';
 import LastDrafted from './Components/lastDrafted';
 import TeamDrafting from './Components/teamDrafting';
+import ReassignPick from './Components/reassignPick';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   time.setSeconds(time.getSeconds() + 600); // 10 minutes timer
 
   const [startDraft, setStartDraft] = useState(false);
+
 
   return (
     <div className="App">
@@ -26,6 +28,7 @@ function App() {
 
           <Col>
             <button onClick={() => setStartDraft(!startDraft)}>Start Draft</button>
+            <ReassignPick />
             <Clock expiryTimestamp={time} isStarted={startDraft} />
             <PlayerSelection />
           </Col>

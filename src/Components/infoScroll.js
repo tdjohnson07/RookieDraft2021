@@ -18,7 +18,7 @@ export default function InfoScroll(){
 
     return (
         <div>
-            <ScrollText className="pickScroll">{roundText}</ScrollText>
+            <ScrollText speed={100} className="pickScroll">{roundText}</ScrollText>
       </div>
     )
 }

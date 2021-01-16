@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {updateDraftIndex, addDraftedPlayerToTeam, addPlayerDrafted, removePlayerDrafted} from './Actions/actions';
-import './clock.css';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 export default function PlayerSelection(){
     const playersAvailable = useSelector((state) => state.playersAvailableReducer);
@@ -10,10 +11,25 @@ export default function PlayerSelection(){
     const dispatch = useDispatch();
     const [selectedPlayer, setSelectedPlayer] = useState();
 
+    const MySwal = withReactContent(Swal);
+
     const incrementDraftIndex = () => {
         let playerSelected = playersAvailable.find(p => p.fullName === selectedPlayer);
+        let team = draftOrder[draftIndex];
         if(playerSelected){
-            let team = draftOrder[draftIndex];
+          MySwal.fire({
+            title: <div>
+                <h1>The Pick Is In!!!!</h1>
+                <h2>{"The " + team.name + " Select: "}</h2>
+                <h2>{playerSelected.fullName + ", " + playerSelected.position + ", " + playerSelected.school}</h2>
+                <img className="teamLogo"  src={process.env.PUBLIC_URL + team.imagePath} alt="logo"/>
+              </div>,
+            width: '100%',
+            timer: 4000,
+            background: 'burlywood'
+          })
+
+            
             playerSelected.picked = draftIndex;
             playerSelected.draftedBy = team.name;
             dispatch(addDraftedPlayerToTeam(playerSelected, team));

@@ -95,5 +95,5 @@ export const Pirates = {
 }
 
 export const teams = [Eskimos, HeadHunters, Lumberjacks, RiverRats, Wyverns, Muddogs, Stags, Bandits, TrashPandas, Valor, Landsharks, Pirates];
-export const firstRound = [Valor, RiverRats, Eskimos, Valor, HeadHunters, TrashPandas, Lumberjacks, Eskimos, Wyverns, Bandits, Muddogs, Landsharks];
+export const draftOrder = [Valor, RiverRats, Eskimos, Valor, HeadHunters, TrashPandas, Lumberjacks, Eskimos, Wyverns, Bandits, Muddogs, Landsharks];
 

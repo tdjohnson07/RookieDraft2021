@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {useTimer} from 'react-timer-hook';
 import {useDispatch, useSelector} from 'react-redux';
-import {teams, firstRound} from '../Constants/teams';
 import {updateDraftIndex} from './Actions/actions';
 import './clock.css';
 

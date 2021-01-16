@@ -8,6 +8,7 @@ import InfoScroll from './Components/infoScroll';
 import LastDrafted from './Components/lastDrafted';
 import TeamDrafting from './Components/teamDrafting';
 import ReassignPick from './Components/reassignPick';
+import RoundHeader from './Components/roundHeader';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <h1>MGFL Dyansty League 2021 Rookie Draft</h1>
+      <RoundHeader />
       <Container fluid>
         <Row>
           <Col>

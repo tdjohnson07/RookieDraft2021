@@ -40,4 +40,42 @@ export const rMoore = {
     school : "Purdue"
 }
 
-export const players = [jChase, tEtienne, dSmith, nHarris, rMoore];
+export const jWaddle = {
+    fullName : "Jaylen Waddle",
+    position : "WR",
+    school : "Alabama"
+}
+
+export const kPitts = {
+    fullName : "Kyle Pitts",
+    position : "TE",
+    school: "Florida"
+}
+
+export const rBateman = {
+    fullName: "Rashod Bateman",
+    position: "WR",
+    school: "Minnesota"
+}
+
+export const tMarshall = {
+    fullName: "Terrace Marshall",
+    position: "WR",
+    school: "LSU"
+}
+
+export const tLawrence = {
+    fullName: "Trevor Lawrence",
+    position: "QB",
+    school: "Clemson"
+}
+
+export const eMoore = {
+    fullName: "Elijah Moore",
+    position: "WR",
+    school: "Ole Miss"
+}
+
+
+
+export const players = [jChase, tEtienne, dSmith, nHarris, rMoore, jWaddle, kPitts, rBateman, tMarshall, tLawrence, eMoore];

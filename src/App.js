@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {useSelector} from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,12 +6,11 @@ import Clock from './Components/clock';
 import PlayerSelection from './Components/playerSelection';
 import InfoScroll from './Components/infoScroll';
 import LastDrafted from './Components/lastDrafted';
+import TeamDrafting from './Components/teamDrafting';
 import './App.css';
 
 function App() {
   const time = new Date();
-  const draftIndex = useSelector((state) => state.draftIndexReducer);
-  const draftOrder = useSelector((state) => state.draftOrderReducer);
   time.setSeconds(time.getSeconds() + 600); // 10 minutes timer
 
   const [startDraft, setStartDraft] = useState(false);
@@ -23,8 +21,7 @@ function App() {
       <Container fluid>
         <Row>
           <Col>
-            <h2>On the Clock: {draftOrder[draftIndex]?.name}</h2>
-            <img className="teamLogo"  src={process.env.PUBLIC_URL + draftOrder[draftIndex]?.imagePath} alt="logo"/>
+            <TeamDrafting />
           </Col>
 
           <Col>

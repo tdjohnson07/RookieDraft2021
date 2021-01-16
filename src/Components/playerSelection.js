@@ -40,8 +40,8 @@ export default function PlayerSelection(){
         
       }
 
-      let playerSelects =  playersAvailable.map((p, index) => {
-        return (<option key={index} value={p.fullName}>{p.fullName}</option>)
+      let playerSelects =  playersAvailable.sort((a,b) => {if(a.fullName < b.fullName) {return -1;} if(a.fullName > b.fullName){return 1;} return 0; }).map((p, index) => {
+        return (<option key={index} value={p.fullName}>{p.fullName + ", " + p.position + ", " + p.school }</option>)
       });
 
 
@@ -49,12 +49,12 @@ export default function PlayerSelection(){
 
     return (
         <div>
-            <button onClick={incrementDraftIndex}>Make Pick</button>
             <label>Players: </label>
             <select name="players" value={selectedPlayer} onChange={(e) => setSelectedPlayer(e.target.value)}>
               <option key={-1} value=""></option>
               {playerSelects}
             </select>
+            <button onClick={incrementDraftIndex}>Make Pick</button>
       </div>
     )
 }

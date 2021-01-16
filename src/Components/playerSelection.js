@@ -15,6 +15,7 @@ export default function PlayerSelection(){
         if(playerSelected){
             let team = draftOrder[draftIndex];
             playerSelected.picked = draftIndex;
+            playerSelected.draftedBy = team.name;
             dispatch(addDraftedPlayerToTeam(playerSelected, team));
             dispatch(addPlayerDrafted(playerSelected));
             dispatch(removePlayerDrafted(playerSelected));

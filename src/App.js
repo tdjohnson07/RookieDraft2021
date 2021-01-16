@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Clock from './Components/clock';
 import PlayerSelection from './Components/playerSelection';
 import InfoScroll from './Components/infoScroll';
+import LastDrafted from './Components/lastDrafted';
 import './App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           </Col>
 
           <Col>
+          <LastDrafted />
           </Col>
         </Row>
       </Container>

@@ -25,7 +25,7 @@ export default function PlayerSelection(){
                 <img className="teamLogo"  src={process.env.PUBLIC_URL + team.imagePath} alt="logo"/>
               </div>,
             width: '100%',
-            timer: 4000,
+            timer: 2000,
             background: 'burlywood'
           })
 

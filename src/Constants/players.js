@@ -154,5 +154,131 @@ export const kToney = {
     school: "Florida"
 }
 ////
+export const zWilson = {
+    fullName: "Zach Wilson",
+    position: "WB",
+    school: "BYU"
+}
+
+export const tSermon = {
+    fullName: "Trey Sermon",
+    position: "RB",
+    school: "Ohio State"
+}
+
+export const zWhite = {
+    fullName: "Zamir White",
+    position: "RB",
+    school: "Georgia"
+}
+
+export const tTerry = {
+    fullName: "Tamorrian Terry",
+    position: "WR",
+    school: "Florida State"
+}
+
+export const sSurrat = {
+    fullName: "Sage Surrat",
+    position: "WR",
+    school: "Wake Forest"
+}
+
+export const aRodgers = {
+    fullName: "Amari Rodgers",
+    position: "WR",
+    school: "Clemson"
+}
+
+export const mBorghi = {
+    fullName: "Max Borghi",
+    position: "RB",
+    school: "Washington State"
+}
+
+export const tLance = {
+    fullName: "Trey Lance",
+    position: "QB",
+    school: "North Dakota State"
+}
+
+export const jHawkins = {
+    fullName: "Javian Hawkins",
+    position: "RB",
+    school: "Louisville"
+}
+
+export const mCarter = {
+    fullName: "Michael Carter",
+    position: "RB",
+    school: "North Carolina"
+}
+
+export const kHill = {
+    fullName: "Kylin Hill",
+    position: "RB",
+    school: "Mississippi State"
+}
+
+export const jPatterson = {
+    fullName: "Jaret Paterson",
+    position: "RB",
+    school: "Buffalo"
+}
+////
+export const dNewsome = {
+    fullName: "Dazz Newsome",
+    position: "WR",
+    school: "North Carolina"
+}
+
+export const aSchwartz = {
+    fullName: "Anthony Schwartz",
+    position: "WR",
+    school: "Auburn"
+}
+
+export const hLong = {
+    fullName: "Hunter Long",
+    position: "TE",
+    school: "Boston College"
+}
+
+export const cPowell = {
+    fullName: "Cornell Powell",
+    position: "WR",
+    school: "Clemson"
+}
+
+export const cVerdell = {
+    fullName: "C.J. Verdell",
+    position: "RB",
+    school: "Oregon"
+}
+
+export const kYeboah = {
+    fullName: "Kenny Yeboah",
+    position: "TE",
+    school: "Ole Miss"
+}
+
+export const kTrask = {
+    fullName: "Kyle Trask",
+    position: "QB",
+    school: "Florida"
+}
+
+export const mJones = {
+    fullName: "Mac Jones",
+    position: "QB",
+    school: "Alabama"
+}
+
+
+
+
+
 export const players = [jChase, tEtienne, dSmith, nHarris, rMoore, jWaddle, kPitts, rBateman, tMarshall, tLawrence, eMoore, jWilliams,
-                        tWallace, sWilliams, kGainwell, cOlave, jFields, aStBrown, bJordan, cHubbard, dBrown, pFreiermuth, tAtwell, kToney];
+                        tWallace, sWilliams, kGainwell, cOlave, jFields, aStBrown, bJordan, cHubbard, dBrown, pFreiermuth, tAtwell, kToney,
+                        zWilson, tSermon, zWhite, tTerry, sSurrat, aRodgers, mBorghi, tLance, jHawkins, mCarter, kHill, jPatterson,
+                        dNewsome, aSchwartz, hLong, cPowell, cVerdell, kYeboah, kTrask, mJones];

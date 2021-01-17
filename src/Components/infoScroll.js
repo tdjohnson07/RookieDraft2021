@@ -10,9 +10,9 @@ export default function InfoScroll(){
     for(let i = 0; i<draftOrder.length; i++){
      let playerPicked = " ";
      if(playersDrafted?.length > i){
-         playerPicked = " " + playersDrafted[i].fullName + ", " + playersDrafted[i].position + ", " + playersDrafted[i].school + " "; 
+         playerPicked = " " +  " - "  + playersDrafted[i].fullName + ", " + playersDrafted[i].position + ", " + playersDrafted[i].school + " "; 
      }
-      roundText = roundText + (i+1).toString() + ": " +  draftOrder[i].name + " - " + playerPicked;
+      roundText = roundText + (i+1).toString() + ": " +  draftOrder[i].name + playerPicked;
     }
 
 

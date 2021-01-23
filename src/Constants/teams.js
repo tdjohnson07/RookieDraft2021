@@ -93,7 +93,7 @@ export const Landsharks = {
     needs: "RB",
     picks: [103, 108, 303, 307, 403],
     playersSelectd: [],
-    imagePath: "/images/logos/LakevilleLandSharks.jpg",
+    imagePath: "/images/logos/LakevilleLandsharks.jpg",
     results: "10-3,Regulator Division Champion, League Champion"
 }
 

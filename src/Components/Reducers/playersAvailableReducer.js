@@ -6,7 +6,19 @@ export const playersAvailableReducer = (state = players, action) => {
             let players = [...state];
             let playerIndex = players.indexOf(players.find(p => p.fullName === action.payload.fullName));
             players.splice(playerIndex, 1);
-            return [...players]
+            return [...players];
+        }
+        case "REPLACE_PLAYER_AVAILABLE":{
+            let players = [...state];
+            let playerIndex = players.indexOf(players.find(p => p.fullName === action.payload.playerToRemove.fullName));
+            if(action.payload.playerToAdd.fullName === "Missed Pick"){
+                players.splice(playerIndex, 1);
+            }
+            else{
+                players.splice(playerIndex, 1, action.payload.playerToAdd);
+            }
+            
+            return [...players];
         }
         default:{
             return state;

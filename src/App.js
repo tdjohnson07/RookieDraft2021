@@ -10,6 +10,7 @@ import TeamDrafting from './Components/teamDrafting';
 import ReassignPick from './Components/reassignPick';
 import RoundHeader from './Components/roundHeader';
 import DraftBoard from "./Components/draftBoard";
+import CorrectAPick from "./Components/correctAPick";
 import './App.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Col>
             <button onClick={() => setStartDraft(!startDraft)}>Start Draft</button>
             <ReassignPick />
+            <CorrectAPick />
             <DraftBoard />
             <Clock expiryTimestamp={time} isStarted={startDraft} />
             <PlayerSelection />

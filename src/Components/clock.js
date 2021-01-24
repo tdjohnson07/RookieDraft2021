@@ -1,13 +1,14 @@
 import React, {useEffect} from 'react';
 import {useTimer} from 'react-timer-hook';
 import {useDispatch, useSelector} from 'react-redux';
-import {updateDraftIndex} from './Actions/actions';
+import {updateDraftIndex, addDraftedPlayerToTeam, addPlayerDrafted, removePlayerDrafted} from './Actions/actions';
 import './clock.css';
 
 export default function Clock({ expiryTimestamp, isStarted }){
 
     const dispatch = useDispatch();
     const draftIndex = useSelector((state) => state.draftIndexReducer);
+    const draftOrder = useSelector((state) => state.draftOrderReducer);
 
     const {
         seconds,
@@ -17,7 +18,16 @@ export default function Clock({ expiryTimestamp, isStarted }){
         pause,
         resume,
         restart,
-      } = useTimer({ expiryTimestamp, onExpire: () => dispatch(updateDraftIndex())});
+      } = useTimer({ expiryTimestamp, onExpire: () => timeExpired()});
+
+      const timeExpired = () => {
+
+        const team = draftOrder[draftIndex];
+        const missPlayer = {fullName: 'Missed Pick ' + draftIndex.toString(), school: "NA", position: "NA", draftedBy: team.name};
+        dispatch(updateDraftIndex());
+        dispatch(addPlayerDrafted(missPlayer));
+        dispatch(addDraftedPlayerToTeam(missPlayer, team));
+      }
 
       useEffect(() => {
         if(!isStarted){

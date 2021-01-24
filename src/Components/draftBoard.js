@@ -5,13 +5,10 @@ import Table from 'react-bootstrap/Table';
 import '../App.css'
 
 export default function DraftBoard(){
-    const draftIndex = useSelector((state) => state.draftIndexReducer);
     const playersDrafted = useSelector((state) => state.playersDraftedReducer);
     const draftOrder = useSelector((state) => state.draftOrderReducer);
     const [show, setShow] = useState(false);
 
-    let round = Math.floor(draftIndex/12) + 1;
-    let pick = (draftIndex + 1)%12 ? (draftIndex + 1)%12 : 12; 
 
     const customStyles = {
         content : {

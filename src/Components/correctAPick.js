@@ -22,12 +22,15 @@ export default function CorrectAPick(){
     const confirm = () => {
         let playerToRemove = playersDrafted.find(p => p.fullName === playerToChange);
         let playerToAdd = playersAvailable.find(p => p.fullName === selectedPlayer);
-        playerToAdd.draftedBy = playerToRemove.draftedBy;
-        playerToRemove.draftedBy = "";
-        dispatch(replacePlayerAvailable(playerToAdd, playerToRemove));       
-        dispatch(replacePlayerDrafted(playerToRemove, playerToAdd));
-        dispatch(replaceDraftedPlayerOnTeam(playerToRemove, playerToAdd));
-        setShow(false);
+        if(playerToRemove && playerToAdd){
+            playerToAdd.draftedBy = playerToRemove.draftedBy;
+            playerToRemove.draftedBy = "";
+            dispatch(replacePlayerAvailable(playerToAdd, playerToRemove));       
+            dispatch(replacePlayerDrafted(playerToRemove, playerToAdd));
+            dispatch(replaceDraftedPlayerOnTeam(playerToRemove, playerToAdd));
+            setShow(false);
+        }
+
     }
 
     return (

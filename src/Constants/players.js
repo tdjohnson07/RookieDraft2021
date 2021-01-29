@@ -173,7 +173,7 @@ export const zWhite = {
 }
 
 export const tTerry = {
-    fullName: "Tamorrian Terry",
+    fullName: "Tamorrion Terry",
     position: "WR",
     school: "Florida State"
 }
@@ -273,12 +273,89 @@ export const mJones = {
     position: "QB",
     school: "Alabama"
 }
+//
+export const nCollins = {
+    fullName = "Nico Collins",
+    position = "WR",
+    school = "Michigan"
+}
 
+export const jJefferson = {
+    fullName = "Jermar Jefferson",
+    position = "RB",
+    school = "Oregon State"
+}
 
+export const kHerbert = {
+    fullName = "Khalil Herbert",
+    position = "RB",
+    school = "Virgina Tech"
+}
+
+export const rStevenson = {
+    fullName = "Rhamondre Stevenson",
+    position = "RB",
+    school = "Oklahoma"
+}
+
+export const eMitchell = {
+    fullName = "Elijah Mitchell",
+    position = "RB",
+    school = "Louisiana - Ragin Cajuns"
+}
+
+export const rBoyd = {
+    fullName = "Rakeem Boyd",
+    position = "RB",
+    school = "Arkansas"
+}
+
+export const mStevenson = {
+    fullName = "Marquez Stevenson",
+    position = "WR",
+    school = "Houston"
+}
+
+export const tGrimes = {
+    fullName = "Trevon Grimes",
+    position = "WR",
+    school = "Florida"
+}
+
+export const iSmithMarsette = {
+    fullName = "Ihmir Smith-Marsette",
+    position = "WR",
+    school = "Iowa"
+}
+
+export const dFelton = {
+    fullName = "Demetric Felton",
+    position = "WR",
+    school = "UCLA"
+}
+
+export const dCoxie = {
+    fullName = "Damonte Coxie",
+    position = "WR",
+    school = "Memphis"
+}
+
+export const cEvans = {
+    fullName = "Chris Evans",
+    position = "RB",
+    school = "Michigan"
+}
+
+export const kMond = {
+    fullName = "Kellen Mond",
+    position = "QB",
+    school = "Texas A&M"
+}
 
 
 
 export const players = [jChase, tEtienne, dSmith, nHarris, rMoore, jWaddle, kPitts, rBateman, tMarshall, tLawrence, eMoore, jWilliams,
                         tWallace, sWilliams, kGainwell, cOlave, jFields, aStBrown, bJordan, cHubbard, dBrown, pFreiermuth, tAtwell, kToney,
                         zWilson, tSermon, zWhite, tTerry, sSurrat, aRodgers, mBorghi, tLance, jHawkins, mCarter, kHill, jPatterson,
-                        dNewsome, aSchwartz, hLong, cPowell, cVerdell, kYeboah, kTrask, mJones];
+                        dNewsome, aSchwartz, hLong, cPowell, cVerdell, kYeboah, kTrask, mJones, nCollins, jJefferson, kHerbert, rStevenson,
+                        eMitchell, rBoyd, mStevenson, tGrimes, iSmithMarsette, dFelton, dCoxie, cEvans, kMond];

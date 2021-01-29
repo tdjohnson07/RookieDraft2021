@@ -275,81 +275,81 @@ export const mJones = {
 }
 //
 export const nCollins = {
-    fullName = "Nico Collins",
-    position = "WR",
-    school = "Michigan"
+    fullName: "Nico Collins",
+    position: "WR",
+    school: "Michigan"
 }
 
 export const jJefferson = {
-    fullName = "Jermar Jefferson",
-    position = "RB",
-    school = "Oregon State"
+    fullName: "Jermar Jefferson",
+    position: "RB",
+    school: "Oregon State"
 }
 
 export const kHerbert = {
-    fullName = "Khalil Herbert",
-    position = "RB",
-    school = "Virgina Tech"
+    fullName: "Khalil Herbert",
+    position: "RB",
+    school: "Virgina Tech"
 }
 
 export const rStevenson = {
-    fullName = "Rhamondre Stevenson",
-    position = "RB",
-    school = "Oklahoma"
+    fullName: "Rhamondre Stevenson",
+    position: "RB",
+    school: "Oklahoma"
 }
 
 export const eMitchell = {
-    fullName = "Elijah Mitchell",
-    position = "RB",
-    school = "Louisiana - Ragin Cajuns"
+    fullName: "Elijah Mitchell",
+    position: "RB",
+    school: "Louisiana - Ragin Cajuns"
 }
 
 export const rBoyd = {
-    fullName = "Rakeem Boyd",
-    position = "RB",
-    school = "Arkansas"
+    fullName: "Rakeem Boyd",
+    position: "RB",
+    school: "Arkansas"
 }
 
 export const mStevenson = {
-    fullName = "Marquez Stevenson",
-    position = "WR",
-    school = "Houston"
+    fullName: "Marquez Stevenson",
+    position: "WR",
+    school: "Houston"
 }
 
 export const tGrimes = {
-    fullName = "Trevon Grimes",
-    position = "WR",
-    school = "Florida"
+    fullName: "Trevon Grimes",
+    position: "WR",
+    school: "Florida"
 }
 
 export const iSmithMarsette = {
-    fullName = "Ihmir Smith-Marsette",
-    position = "WR",
-    school = "Iowa"
+    fullName: "Ihmir Smith-Marsette",
+    position: "WR",
+    school: "Iowa"
 }
 
 export const dFelton = {
-    fullName = "Demetric Felton",
-    position = "WR",
-    school = "UCLA"
+    fullName: "Demetric Felton",
+    position: "WR",
+    school: "UCLA"
 }
 
 export const dCoxie = {
-    fullName = "Damonte Coxie",
-    position = "WR",
-    school = "Memphis"
+    fullName: "Damonte Coxie",
+    position: "WR",
+    school: "Memphis"
 }
 
 export const cEvans = {
-    fullName = "Chris Evans",
-    position = "RB",
-    school = "Michigan"
+    fullName: "Chris Evans",
+    position: "RB",
+    school: "Michigan"
 }
 
 export const kMond = {
-    fullName = "Kellen Mond",
-    position = "QB",
-    school = "Texas A&M"
+    fullName: "Kellen Mond",
+    position: "QB",
+    school: "Texas A&M"
 }
 
 
